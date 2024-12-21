@@ -1,0 +1,11 @@
+site_name: Varssos MkDocs
+nav:
+  - Home: index.md
+  - About: about.md
+  - Medium: medium.md
+theme: readthedocs
+
+plugins:
+    - plantuml:
+        puml_url: https://www.plantuml.com/plantuml/
+        num_workers: 8
