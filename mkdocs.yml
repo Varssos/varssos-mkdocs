@@ -3,6 +3,7 @@ nav:
   - Home: index.md
   - About: about.md
   - Medium: medium.md
+  - Linux: linux/index.md
 theme: readthedocs
 
 plugins:
