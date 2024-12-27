@@ -1,4 +1,4 @@
-# Linux
+# Linux :penguin:
 
 Pretty nice linux course [Linux Journey](https://linuxjourney.com/)
 
