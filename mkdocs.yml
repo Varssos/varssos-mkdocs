@@ -4,8 +4,46 @@ nav:
   - About: about.md
   - Medium: medium.md
   - Linux: linux/index.md
-theme: readthedocs
+  - Linux test: 
+    - linux/index.md
+    - Admin tools: linux/admin_tools.md
+    - abc: linux/abc.md
+    - 'Shell tools':
+      - linux/shell_tools/nice.md
+      - linux/shell_tools/fzf.md
+  - Version control:
+    - version_control/index.md
+    - gerrit: version_control/gerrit/index.md
+    - git: version_control/git/index.md
+
+
+theme:
+  name: material
+  palette:
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: green
+      accent: deep purple
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: blue
+      accent: deep orange
+  features:
+    # - navigation.tabs
+    # - navigation.sections
+    - navigation.indexes
+
 
 plugins:
     - plantuml:
         puml_url: https://www.plantuml.com/plantuml/
+
+# markdown_extensions:
+#   - toc:
+#       toc_depth: 2-3
+#       permalink: true
