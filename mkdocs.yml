@@ -6,6 +6,7 @@ nav:
   - Linux: 
     - linux/index.md
     - Admin tools: linux/admin_tools.md
+    - Certificates: linux/certificates.md
     - Shell tools:
       - linux/shell_tools/index.md
       - awk: linux/shell_tools/awk.md
@@ -13,9 +14,11 @@ nav:
       - find: linux/shell_tools/find.md
       - fzf: linux/shell_tools/fzf.md
       - grep: linux/shell_tools/grep.md
+      - md5sum: linux/shell_tools/md5sum.md
       - mv: linux/shell_tools/mv.md
       - nice: linux/shell_tools/nice.md
       - sed: linux/shell_tools/sed.md
+      - sha256sum: linux/shell_tools/sha256sum.md
       - tar: linux/shell_tools/tar.md
     - Random shell exercises: linux/random_shell_exercises.md
       
