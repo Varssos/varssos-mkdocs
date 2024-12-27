@@ -3,14 +3,14 @@ nav:
   - Home: index.md
   - About: about.md
   - Medium: medium.md
-  - Linux: linux/index.md
-  - Linux test: 
+  - Linux: 
     - linux/index.md
     - Admin tools: linux/admin_tools.md
-    - abc: linux/abc.md
-    - 'Shell tools':
-      - linux/shell_tools/nice.md
-      - linux/shell_tools/fzf.md
+    - Shell tools:
+      - linux/shell_tools/index.md
+      - awk: linux/shell_tools/awk.md
+      - nice: linux/shell_tools/nice.md
+      - fzf: linux/shell_tools/fzf.md
   - Version control:
     - version_control/index.md
     - gerrit: version_control/gerrit/index.md
@@ -42,7 +42,8 @@ theme:
     - navigation.instant.prefetch
     - navigation.tracking
     - navigation.indexes
-    - navigation.path
+    - toc.integrate # Table of contents integrated on the left
+    - navigation.tabs.sticky
     - content.code.copy
     - content.code.select
     - content.code.annotate
@@ -76,3 +77,5 @@ markdown_extensions:
   - def_list
   - pymdownx.tasklist:
       custom_checkbox: true
+  - admonition
+  - pymdownx.details
