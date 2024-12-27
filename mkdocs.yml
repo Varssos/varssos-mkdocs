@@ -17,6 +17,7 @@ nav:
       - nice: linux/shell_tools/nice.md
       - sed: linux/shell_tools/sed.md
       - tar: linux/shell_tools/tar.md
+    - Random shell exercises: linux/random_shell_exercises.md
       
   - Version control:
     - version_control/index.md
