@@ -9,6 +9,7 @@ nav:
     - Shell tools:
       - linux/shell_tools/index.md
       - awk: linux/shell_tools/awk.md
+      - expect: linux/shell_tools/expect.md
       - nice: linux/shell_tools/nice.md
       - fzf: linux/shell_tools/fzf.md
   - Version control:
@@ -42,7 +43,7 @@ theme:
     - navigation.instant.prefetch
     - navigation.tracking
     - navigation.indexes
-    - toc.integrate # Table of contents integrated on the left
+    # - toc.integrate # Table of contents integrated on the left
     - navigation.tabs.sticky
     - content.code.copy
     - content.code.select
@@ -79,3 +80,4 @@ markdown_extensions:
       custom_checkbox: true
   - admonition
   - pymdownx.details
+  - tables
