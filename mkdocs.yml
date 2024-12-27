@@ -10,6 +10,8 @@ nav:
       - linux/shell_tools/index.md
       - awk: linux/shell_tools/awk.md
       - expect: linux/shell_tools/expect.md
+      - find: linux/shell_tools/find.md
+      - grep: linux/shell_tools/grep.md
       - nice: linux/shell_tools/nice.md
       - fzf: linux/shell_tools/fzf.md
   - Version control:
@@ -81,3 +83,4 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - tables
+  - md_in_html
