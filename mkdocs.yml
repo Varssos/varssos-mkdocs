@@ -7,6 +7,9 @@ nav:
     - linux/index.md
     - Admin tools: linux/admin_tools.md
     - Certificates: linux/certificates.md
+    - Linux improvements:
+      - linux/linux_improvements/index.md
+      - swap: linux/linux_improvements/swap.md
     - Shell tools:
       - linux/shell_tools/index.md
       - awk: linux/shell_tools/awk.md
