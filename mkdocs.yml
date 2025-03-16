@@ -2,6 +2,9 @@ site_name: Varssos MkDocs
 nav:
   - Home: index.md
   - About: about.md
+  - Docker:
+    - docker/index.md
+    - Install docker: docker/install_docker.md
   - Medium: medium.md
   - Linux: 
     - linux/index.md
