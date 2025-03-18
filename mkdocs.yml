@@ -2,6 +2,13 @@ site_name: Varssos MkDocs
 nav:
   - Home: index.md
   - About: about.md
+  - ESP:
+    - esp/index.md
+    - ESP USB chip drivers: esp/esp_usb_chip_drivers.md
+    - ESPHome: 
+      - esp/esphome/index.md
+      - Getting started with ESPHome: esp/esphome/getting_started_esphome.md
+      - Encountered problems with ESPHome: esp/esphome/esphome_encountered_problems.md
   - Docker:
     - docker/index.md
     - Install docker: docker/install_docker.md
