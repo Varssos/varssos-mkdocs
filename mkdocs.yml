@@ -9,6 +9,7 @@ nav:
       - esp/esphome/index.md
       - Getting started with ESPHome: esp/esphome/getting_started_esphome.md
       - Encountered problems with ESPHome: esp/esphome/esphome_encountered_problems.md
+      - Wifi Fallback: esp/esphome/wifi_fallback.md
   - Docker:
     - docker/index.md
     - Install docker: docker/install_docker.md
