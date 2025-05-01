@@ -14,6 +14,10 @@ nav:
     - docker/index.md
     - Install docker: docker/install_docker.md
   - Medium: medium.md
+  - Network:
+    - network/index.md
+    - DoIP:
+      - DoIP general information: network/doip/doip_general_information.md
   - Linux: 
     - linux/index.md
     - Admin tools: linux/admin_tools.md
