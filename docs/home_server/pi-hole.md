@@ -66,3 +66,11 @@ Solutino: extend block list
 
 3. Blocked port 53?
 [Tips and Tricks](https://docs.pi-hole.net/docker/tips-and-tricks/)
+
+4. Check actual dns on your interfaces. Maybe it's not a home server?
+```
+resolvectl status
+```
+
+5. Ads are blocked only on one device, not in entire local network
+Add home server ip address as primary dns in your router and second e.g. 8.8.8.8
