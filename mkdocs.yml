@@ -2,6 +2,9 @@ site_name: Varssos MkDocs
 nav:
   - Home: index.md
   - About: about.md
+  - Docker:
+    - docker/index.md
+    - Install docker: docker/install_docker.md
   - ESP:
     - esp/index.md
     - ESP USB chip drivers: esp/esp_usb_chip_drivers.md
@@ -10,9 +13,11 @@ nav:
       - Getting started with ESPHome: esp/esphome/getting_started_esphome.md
       - Encountered problems with ESPHome: esp/esphome/esphome_encountered_problems.md
       - Wifi Fallback: esp/esphome/wifi_fallback.md
-  - Docker:
-    - docker/index.md
-    - Install docker: docker/install_docker.md
+  - Home server:
+    - home_server/index.md
+    - Homeassistant: home_server/homeassistant.md
+    - Nginx proxy manager: home_server/nginx_proxy_manager.md
+    - Pi-hole: home_server/pi-hole.md
   - Medium: medium.md
   - Network:
     - network/index.md
