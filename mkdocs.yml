@@ -16,6 +16,7 @@ nav:
   - Home server:
     - home_server/index.md
     - Homeassistant: home_server/homeassistant.md
+    - Immich: home_server/immich.md
     - Nginx proxy manager: home_server/nginx_proxy_manager.md
     - Pi-hole: home_server/pi-hole.md
   - Medium: medium.md
