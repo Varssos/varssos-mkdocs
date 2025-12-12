@@ -44,7 +44,8 @@ nav:
       - sed: linux/shell_tools/sed.md
       - sha256sum: linux/shell_tools/sha256sum.md
       - tar: linux/shell_tools/tar.md
-    - RAID in Linux: linux/raid_in_linux/index.md
+    - RAID in Linux:
+      - linux/raid_in_linux/index.md
       - mdadm: linux/raid_in_linux/mdadm.md
     - Random shell exercises: linux/random_shell_exercises.md
       
