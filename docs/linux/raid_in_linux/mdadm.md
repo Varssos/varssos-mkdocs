@@ -116,6 +116,8 @@ sudo update-initramfs -u
 4. Create mounting point
 ```
 sudo mkdir -p /mnt/md0
+sudo chown -R $USER:$USER /mnt/md0
+sudo chmod 775 /mnt/md0
 ```
 
 5. Check uuid of RAID
