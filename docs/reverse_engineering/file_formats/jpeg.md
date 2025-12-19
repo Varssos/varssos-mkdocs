@@ -6,6 +6,7 @@
 ![JPEGRGB dissected](JPEGRGB_dissected.png)
 
 General info:
+
 - JPEG consist of many segments
 - Usually JPEGs have different structures of segments but generally something like:
     ```
@@ -27,6 +28,7 @@ It consists of the start marker.
 ```
 FF D8
 ```
+
 - `FF` - marker
 - `D8` - segment type
 
@@ -35,6 +37,7 @@ It consists of a marker, length field, and application-specific data.
 ```
 FF XX [LEN_H] [LEN_L] [DATA..]
 ```
+
 - `APP0` - `FF E0` - JFIF/JFXX
 - `APP1` - `FF E1` - EXIF/XMP
 - ...
@@ -66,6 +69,7 @@ Hex View  00 01 02 03 04 05 06 07  08 09 0A 0B 0C 0D 0E 0F
 ```
 FF E1 [LEN_H] [LEN_L] [IDENTIFIER] [DATA...]
 ```
+
 - `3F 4F` - length
 - `45 78 69 66 00 00` - exif identifier
 
@@ -73,6 +77,7 @@ FF E1 [LEN_H] [LEN_L] [IDENTIFIER] [DATA...]
 ```
 49 49 2A 00 08 00 00 00
 ```
+
 - `49 49` - Little-endian
 - `2A 00` - TIFF magic number
 - `08 00 00 00` - offset to IFD0
@@ -91,6 +96,7 @@ FF E1 [LEN_H] [LEN_L] [IDENTIFIER] [DATA...]
 ```
 0F 01  02 00 07 00 00 00 92 00 00 00
 ```
+
 - `0F 01` -> 0x010F - tag: make
 - `02 00` -> 0x0002 - type: ASCII
 - `07 00 00 00` -> 7 bytes
@@ -106,6 +112,7 @@ It consists of a marker, length, quantization table information, and 64 quantiza
 ```
 FF DB [LEN_H] [LEN_L] [PQ_TQ] [Q0..63]
 ```
+
 - `FF DB` - marker
 - `LEN_H LEN_L` - length of segment (including itself)
 - `PQ_TQ` - precision (4 bits) and table destination (4 bits)
@@ -116,6 +123,7 @@ It consists of a marker, length, image dimensions, precision, number of componen
 ```
 FF C0 [LEN_H] [LEN_L] [P] [Y_H Y_L] [X_H X_L] [Nf] [C1..Nf] [H1 V1 Q1] ...
 ```
+
 - `FF C0` - marker
 - `LEN_H LEN_L` - length
 - `P` - precision (8 or 12 bits)
@@ -129,6 +137,7 @@ It consists of a marker, length, table class and destination, code lengths, and 
 ```
 FF C4 [LEN_H] [LEN_L] [Tc_Th] [L1..16] [V1..]
 ```
+
 - `FF C4` - marker
 - `LEN_H LEN_L` - length
 - `Tc_Th` - table class (0=DC, 1=AC) and table destination
@@ -140,6 +149,7 @@ It consists of a marker, length, number of components, component selectors, tabl
 ```
 FF DA [LEN_H] [LEN_L] [Ns] [Cs1..Ns] [Td1 Ta1] ... [Ss] [Se] [Ah Al]
 ```
+
 - `FF DA` - marker
 - `LEN_H LEN_L` - length
 - `Ns` - number of components in scan
@@ -152,6 +162,7 @@ It consists of the end marker.
 ```
 FF D9
 ```
+
 - `FF D9` - marker
 - Indicates end of JPEG file
 
