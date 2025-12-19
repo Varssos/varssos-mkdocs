@@ -55,6 +55,16 @@ nav:
     - git: version_control/git/index.md
   - Python:
     - python/index.md
+  - Reverse engineering:
+    - reverse_engineering/index.md
+    - Reverse engineering tools: 
+      - reverse_engineering/reverse_engineering_tools/index.md
+      - ExifTool: reverse_engineering/reverse_engineering_tools/exiftool.md
+      - ImHex: reverse_engineering/reverse_engineering_tools/imhex.md
+    - File formats:
+      - reverse_engineering/file_formats/index.md
+      - JPEG: reverse_engineering/file_formats/jpeg.md
+    
 
 
 theme:
