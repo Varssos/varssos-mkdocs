@@ -50,6 +50,19 @@ exiftool -gps:all= ./file.jpg
 exiftool -AllDates= ./file.jpg
 ```
 
+### How to find files with .jpg extension which are not JPEG
+
+```
+find . -type f \( -iname '*.jpg' -o -iname '*.jpeg' \) -exec file {} + | grep -v JPEG
+```
+
+### How to find jpegs which has format error
+
+```
+find . -type f \( -iname '*.jpg' -o -iname '*.jpeg' \) -exec sh -c 'exiftool "$1" 2>&1 | grep -q "JPEG format error" && echo "$1"' _ {} \;
+`
+
+
 ## [MP4] Useful exiftool commands
 
 ### Change dates in mp4
