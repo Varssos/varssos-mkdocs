@@ -60,7 +60,8 @@ find . -type f \( -iname '*.jpg' -o -iname '*.jpeg' \) -exec file {} + | grep -v
 
 ```
 find . -type f \( -iname '*.jpg' -o -iname '*.jpeg' \) -exec sh -c 'exiftool "$1" 2>&1 | grep -q "JPEG format error" && echo "$1"' _ {} \;
-`
+```
+
 
 
 ## [MP4] Useful exiftool commands
