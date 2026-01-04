@@ -16,3 +16,12 @@ Follow [immich - Quick Start](https://docs.immich.app/overview/quick-start/)
 ```
 docker logs immich_server --tail=100
 ```
+
+## Known issues
+502 bad gateway?
+not able to ping abc.duckdns.org?
+
+Fix:
+1. fix dns
+2. restart nginx proxy
+3. should be solved
