@@ -1,5 +1,9 @@
 # JPEG
 
+## JPEG files recovery
+
+[JPEG files recovery](./jpeg_files_recovery.md)
+
 
 ## JPEG structure
 
