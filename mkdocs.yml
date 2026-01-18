@@ -15,11 +15,12 @@ nav:
       - Wifi Fallback: esp/esphome/wifi_fallback.md
   - Home server:
     - home_server/index.md
+    - AFFiNE: home_server/affine.md
+    - AppFlowy: home_server/appflowy.md
     - Homeassistant: home_server/homeassistant.md
     - Immich: home_server/immich.md
     - Nginx proxy manager: home_server/nginx_proxy_manager.md
     - Pi-hole: home_server/pi-hole.md
-    - AppFlowy: home_server/appflowy.md
   - Medium: medium.md
   - Network:
     - network/index.md
