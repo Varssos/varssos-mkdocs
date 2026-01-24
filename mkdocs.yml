@@ -33,6 +33,7 @@ nav:
     - Linux improvements:
       - linux/linux_improvements/index.md
       - swap: linux/linux_improvements/swap.md
+    - Nvidia: linux/nvidia.md
     - Shell tools:
       - linux/shell_tools/index.md
       - awk: linux/shell_tools/awk.md
