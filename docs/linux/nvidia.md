@@ -29,8 +29,8 @@ prime-select query
 
 
 ## Known issues with nvidia
-- Black screen with multimonitors on system startup.
-
+### Black screen with multimonitors on system startup.
+! This can run nvidia as main card and make eDP not available (amdgpu) which disable laptop monitor and enable all external monitors
 Root cause:
 lightdm start faster that Nvidia set all
 Fix:
@@ -38,7 +38,7 @@ Fix:
 ```
 sudo nano /etc/default/grub
 ```
-2. Add option: nvidia-drm.modeset=1 
+2. Add option: nvidia-drm.modeset=1
 ```
 GRUB_CMDLINE_LINUX_DEFAULT="quiet splash nvidia-drm.modeset=1"
 ```
@@ -49,7 +49,28 @@ sudo update-grub
 sudo reboot
 ```
 
-- High temperature even during brosing internet
+### Black screen on laptop monitor but external working on
+
+It's when in `xrandr` output eDP is not visible
+
+Fix:
+1. Erase `nvidia-drm.modeset=1` from `/etc/default/grub`
+```
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+```
+
+2. Move xorg.conf to backup
+```
+sudo mv /etc/X11/xorg.conf /etc/X11/xorg.conf.backup
+```
+
+3. Change prime to on-demand
+```
+sudo prime-select on-demand
+```
+
+
+### High temperature even during brosing internet
 
 What can reduce:
 1. Disable graphics acceleration
@@ -74,4 +95,5 @@ sudo nvidia-smi -pl 60
 4. Monitor or control fan if possible
 
 [CoolerControl OSS project](https://gitlab.com/coolercontrol/coolercontrol)
+
 
