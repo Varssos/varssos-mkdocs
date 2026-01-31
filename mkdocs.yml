@@ -2,6 +2,9 @@ site_name: Varssos MkDocs
 nav:
   - Home: index.md
   - About: about.md
+  - Ansible:
+    - ansible/index.md
+    - ansible-vault: ansible/ansible-vault.md 
   - Docker:
     - docker/index.md
     - Install docker: docker/install_docker.md
