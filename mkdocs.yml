@@ -8,6 +8,12 @@ nav:
   - Docker:
     - docker/index.md
     - Install docker: docker/install_docker.md
+  - Embedded linux:
+    - embedded_linux/index.md
+    - Android: 
+      - embedded_linux/android/index.md
+      - AIDL: embedded_linux/android/aidl.md
+      - Services: embedded_linux/android/services.md
   - ESP:
     - esp/index.md
     - ESP USB chip drivers: esp/esp_usb_chip_drivers.md
