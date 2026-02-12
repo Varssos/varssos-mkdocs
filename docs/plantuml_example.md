@@ -1,4 +1,4 @@
-# Medium
+# Plantuml example
 
 You may see the overall process on the diagram below
 

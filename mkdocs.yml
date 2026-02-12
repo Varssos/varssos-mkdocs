@@ -1,81 +1,84 @@
 site_name: Varssos MkDocs
-nav:
-  - Home: index.md
-  - About: about.md
-  - Ansible:
-    - ansible/index.md
-    - ansible-vault: ansible/ansible-vault.md 
-  - Docker:
-    - docker/index.md
-    - Install docker: docker/install_docker.md
-  - Embedded linux:
-    - embedded_linux/index.md
-    - Android: 
-      - embedded_linux/android/index.md
-      - AIDL: embedded_linux/android/aidl.md
-      - Services: embedded_linux/android/services.md
-  - ESP:
-    - esp/index.md
-    - ESP USB chip drivers: esp/esp_usb_chip_drivers.md
-    - ESPHome: 
-      - esp/esphome/index.md
-      - Getting started with ESPHome: esp/esphome/getting_started_esphome.md
-      - Encountered problems with ESPHome: esp/esphome/esphome_encountered_problems.md
-      - Wifi Fallback: esp/esphome/wifi_fallback.md
-  - Home server:
-    - home_server/index.md
-    - AFFiNE: home_server/affine.md
-    - AppFlowy: home_server/appflowy.md
-    - Homeassistant: home_server/homeassistant.md
-    - Immich: home_server/immich.md
-    - Nginx proxy manager: home_server/nginx_proxy_manager.md
-    - Pi-hole: home_server/pi-hole.md
-  - Medium: medium.md
-  - Network:
-    - network/index.md
-    - DoIP:
-      - DoIP general information: network/doip/doip_general_information.md
-  - Linux: 
-    - linux/index.md
-    - Admin tools: linux/admin_tools.md
-    - Certificates: linux/certificates.md
-    - Linux improvements:
-      - linux/linux_improvements/index.md
-      - swap: linux/linux_improvements/swap.md
-    - Nvidia: linux/nvidia.md
-    - Shell tools:
-      - linux/shell_tools/index.md
-      - awk: linux/shell_tools/awk.md
-      - expect: linux/shell_tools/expect.md
-      - find: linux/shell_tools/find.md
-      - fzf: linux/shell_tools/fzf.md
-      - grep: linux/shell_tools/grep.md
-      - md5sum: linux/shell_tools/md5sum.md
-      - mv: linux/shell_tools/mv.md
-      - nice: linux/shell_tools/nice.md
-      - sed: linux/shell_tools/sed.md
-      - sha256sum: linux/shell_tools/sha256sum.md
-      - tar: linux/shell_tools/tar.md
-    - RAID in Linux:
-      - linux/raid_in_linux/index.md
-      - mdadm: linux/raid_in_linux/mdadm.md
-    - Random shell exercises: linux/random_shell_exercises.md
+# nav:
+#   - Home: index.md
+#   - About: about.md
+#   - Apps:
+#     - apps/index.md
+#     - Brave: apps/brave.md
+#   - Ansible:
+#     - ansible/index.md
+#     - ansible-vault: ansible/ansible-vault.md 
+#   - Docker:
+#     - docker/index.md
+#     - Install docker: docker/install_docker.md
+#   - Embedded linux:
+#     - embedded_linux/index.md
+#     - Android: 
+#       - embedded_linux/android/index.md
+#       - AIDL: embedded_linux/android/aidl.md
+#       - Services: embedded_linux/android/services.md
+#   - ESP:
+#     - esp/index.md
+#     - ESP USB chip drivers: esp/esp_usb_chip_drivers.md
+#     - ESPHome: 
+#       - esp/esphome/index.md
+#       - Getting started with ESPHome: esp/esphome/getting_started_esphome.md
+#       - Encountered problems with ESPHome: esp/esphome/esphome_encountered_problems.md
+#       - Wifi Fallback: esp/esphome/wifi_fallback.md
+#   - Home server:
+#     - home_server/index.md
+#     - AFFiNE: home_server/affine.md
+#     - AppFlowy: home_server/appflowy.md
+#     - Homeassistant: home_server/homeassistant.md
+#     - Immich: home_server/immich.md
+#     - Nginx proxy manager: home_server/nginx_proxy_manager.md
+#     - Pi-hole: home_server/pi-hole.md
+#   - Medium: medium.md
+#   - Network:
+#     - network/index.md
+#     - DoIP:
+#       - DoIP general information: network/doip/doip_general_information.md
+#   - Linux: 
+#     - linux/index.md
+#     - Admin tools: linux/admin_tools.md
+#     - Certificates: linux/certificates.md
+#     - Linux improvements:
+#       - linux/linux_improvements/index.md
+#       - swap: linux/linux_improvements/swap.md
+#     - Nvidia: linux/nvidia.md
+#     - Shell tools:
+#       - linux/shell_tools/index.md
+#       - awk: linux/shell_tools/awk.md
+#       - expect: linux/shell_tools/expect.md
+#       - find: linux/shell_tools/find.md
+#       - fzf: linux/shell_tools/fzf.md
+#       - grep: linux/shell_tools/grep.md
+#       - md5sum: linux/shell_tools/md5sum.md
+#       - mv: linux/shell_tools/mv.md
+#       - nice: linux/shell_tools/nice.md
+#       - sed: linux/shell_tools/sed.md
+#       - sha256sum: linux/shell_tools/sha256sum.md
+#       - tar: linux/shell_tools/tar.md
+#     - RAID in Linux:
+#       - linux/raid_in_linux/index.md
+#       - mdadm: linux/raid_in_linux/mdadm.md
+#     - Random shell exercises: linux/random_shell_exercises.md
       
-  - Version control:
-    - version_control/index.md
-    - gerrit: version_control/gerrit/index.md
-    - git: version_control/git/index.md
-  - Python:
-    - python/index.md
-  - Reverse engineering:
-    - reverse_engineering/index.md
-    - Reverse engineering tools: 
-      - reverse_engineering/reverse_engineering_tools/index.md
-      - ExifTool: reverse_engineering/reverse_engineering_tools/exiftool.md
-      - ImHex: reverse_engineering/reverse_engineering_tools/imhex.md
-    - File formats:
-      - reverse_engineering/file_formats/index.md
-      - JPEG: reverse_engineering/file_formats/jpeg.md
+#   - Version control:
+#     - version_control/index.md
+#     - gerrit: version_control/gerrit/index.md
+#     - git: version_control/git/index.md
+#   - Python:
+#     - python/index.md
+#   - Reverse engineering:
+#     - reverse_engineering/index.md
+#     - Reverse engineering tools: 
+#       - reverse_engineering/reverse_engineering_tools/index.md
+#       - ExifTool: reverse_engineering/reverse_engineering_tools/exiftool.md
+#       - ImHex: reverse_engineering/reverse_engineering_tools/imhex.md
+#     - File formats:
+#       - reverse_engineering/file_formats/index.md
+#       - JPEG: reverse_engineering/file_formats/jpeg.md
     
 
 
@@ -113,6 +116,7 @@ plugins:
     - plantuml:
         puml_url: https://www.plantuml.com/plantuml/
     - search
+    # - awesome-pages
 
 # markdown_extensions:
 #   - toc:
