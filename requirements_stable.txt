@@ -3,3 +3,4 @@ mkdocs_puml==2.3.0
 plantuml==0.3.0
 mkdocs-material==9.5.49
 #mkdocs-awesome-pages-plugin==2.10.1
+click==8.2.1 # On newest autoreloading not working
