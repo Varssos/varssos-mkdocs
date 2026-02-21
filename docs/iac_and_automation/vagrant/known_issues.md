@@ -14,3 +14,11 @@ Stop in one place to unlock it in your desired destination
 ```
 vagrant halt
 ```
+
+## Not set provider
+```
+vagrant up --provider=virtualbox
+# or
+sudo apt-get install -y linux-headers-$(uname -r) build-essential dkms
+sudo /sbin/vboxconfig
+```
