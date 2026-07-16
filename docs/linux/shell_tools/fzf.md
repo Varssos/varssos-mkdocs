@@ -23,10 +23,3 @@ CTRL-R  - bash history
 ## Search syntax
 
 - `.log !logcat` - all `.log` but not `logcat`
-
-
-## Configs
-
-```
-
-```
