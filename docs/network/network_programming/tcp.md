@@ -46,6 +46,7 @@ https://man7.org/linux/man-pages/man0/sys_socket.h.0p.html
 - ai_family  AF_INET  2
 
 
+
 <bits/socket_type.h>
 https://man7.org/linux/man-pages/man2/socket.2.html
 - ai_socktype  SOCK_STREAM = 1,
@@ -56,3 +57,35 @@ https://man7.org/linux/man-pages/man0/netinet_in.h.0p.html
 
 
 ### System Calls or Bust
+
+#### `getaddrinfo()`
+
+https://man7.org/linux/man-pages/man3/getaddrinfo.3.html
+
+It helps set up the structs you need later on.
+It does all kinds of good stuff for you, including DNS and service name lookups, and fills out the structs you need
+
+
+#### `socket()`
+
+https://man7.org/linux/man-pages/man2/socket.2.html
+
+AF - address family
+PF - protocol family
+
+```c
+int s;
+struct addrinfo hints, *res;
+
+// do the lookup
+// [pretend we already filled out the "hints" struct]
+getaddrinfo("www.example.com", "http", &hints, &res);
+
+// again, you should do error-checking on getaddrinfo(), and walk
+// the "res" linked list looking for valid entries instead of just
+// assuming the first one is good (like many of these examples do).
+// See the section on client/server for real examples.
+s = socket(res->ai_family, res->ai_socktype, res->ai_protocol);
+```
+
+`socket()` simply returns to you a socket descriptor that you can use in later system calls, or `-1` on error. The global varaible `errno` is set to the error's value.
