@@ -1,5 +1,9 @@
 # Python
 
+- [Packages](./packages/index.md)
+- [Pip](./pip.md)
+- [Python learning](./python_learning.md)
+
 ## Example code snippet
 
 === "Hello world1"

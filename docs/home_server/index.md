@@ -1,1 +1,15 @@
 # Home server
+
+- [Affine](./affine.md)
+- [Appflowy](./appflowy.md)
+- [Arr](./arr/index.md)
+- [Home Assistant](./homeassistant.md)
+- [Immich](./immich.md)
+- [Jellyfin](./jellyfin.md)
+- [Navidrome](./navidrome.md)
+- [Nextcloud](./nextcloud/index.md)
+- [Nginx Proxy Manager](./nginx_proxy_manager.md)
+- [Pi-hole](./pi-hole.md)
+- [Qbittorrent](./qbittorrent.md)
+- [Samba](./samba/index.md)
+- [Server storage](./server_storage/index.md)

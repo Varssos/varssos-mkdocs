@@ -2,6 +2,14 @@
 
 [Pi-hole documentation](https://docs.pi-hole.net/)
 
+## Bare-metal install
+
+[Pi-hole basic install](https://docs.pi-hole.net/main/basic-install/)
+
+```bash
+curl -sSL https://install.pi-hole.net | bash
+```
+
 ## Pi-hole with docker
 
 1. Create docker-compose.yml content
@@ -49,6 +57,8 @@ nano /etc/unbound/unbound.conf.d/pi-hole.conf
 sudo service unbound restart
 dig pi-hole.net @127.0.0.1 -p 5335
 ```
+
+4. If not using the docker `FTLCONF_dns_upstreams` env var, go to the Pi-hole admin panel -> Settings -> DNS -> untick the default upstream and add a custom DNS entry `127.0.0.1#5335` (you may need to enable `Permit all origins`)
 
 ### Remove unbound
 ```
