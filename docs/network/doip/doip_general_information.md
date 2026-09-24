@@ -10,8 +10,6 @@ DoIP is defined in ISO 13400
 - network node - device connected to the IP - based network but does not implement the DoIP protocol
 - vehicle sub-network - network not directly connected to the IP-based network
 
-## Symbols and abbreviated terms
-
 ## Scope
 
 Mandatory features:
@@ -31,3 +29,5 @@ Optional features:
 
 - Started with the introduction of the first legislated emissions-related diagnostics.
 - It evolved to optimized data link layer and transport protocol developments in order to make the new in-vehicle networks usable for diagnostic communication.
+
+> This page is a work in progress - further ISO 13400 details (message structure, routing activation, vehicle announcement/discovery) still need to be added.

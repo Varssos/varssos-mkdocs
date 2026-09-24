@@ -34,3 +34,21 @@ Command:
 ```bash
 nmap -iL list.txt
 ```
+
+## Service/version detection
+
+```bash
+nmap -sV 192.168.0.100
+```
+
+## OS detection
+
+```bash
+nmap -O 192.168.0.100
+```
+
+## Save output to a file
+
+```bash
+nmap -oN scan_results.txt 192.168.0.100
+```

@@ -2,20 +2,19 @@
 
 Based on [Beej's Guide to Network Programming](https://beej.us/guide/bgnet/pdf/bgnet_usl_c_1.pdf)
 
-## What is a sockets?
+## What is a socket?
 
-Way to speak to other programs using standard Unix file descriptors
+A way to speak to other programs using standard Unix file descriptors.
 
-A file descript - an integer associated with an open file. That file can be a network connection, a FIFO, a pipe, a terminal, a real on-the-disk file or just about anything else. Everything in Unix is a file.
+A file descriptor is an integer associated with an open file. That file can be a network connection, a FIFO, a pipe, a terminal, a real on-disk file, or just about anything else - everything in Unix is a file.
 
-### Where do I get this file descriptor for network communication?
+### Where do I get a file descriptor for network communication?
 
 You make a call to the `socket()` system routine. It returns the socket descriptor, and you communicate through it using the specialized `send()` and `recv()` socket calls.
 
-### Two main types of Internet Sockets
-- Stream Sockets - telnet, ssh, tcp - reliable two-way connected communication streams (error-free, arrive in the same order)
-- Datagram Sockets - UDP - User Datagram Protocol, tftp, dhcpcd, multiplayer games, streaming audio etc (used due to speed) - connectionless, unreliable, if it arrives, the data withing the packet will be error-free
-
+### Two main types of Internet sockets
+- Stream sockets - telnet, ssh, TCP - reliable two-way connected communication streams (error-free, arrive in the same order)
+- Datagram sockets - UDP (User Datagram Protocol), tftp, dhcpcd, multiplayer games, streaming audio, etc. (used for speed) - connectionless, unreliable; if a packet arrives, its data will be error-free, but packets can be lost or arrive out of order
 
 ## Byte Order (3.2)
 
@@ -32,29 +31,20 @@ You make a call to the `socket()` system routine. It returns the socket descript
 
 ## Structs
 
-socket descriptor is int
+A socket descriptor is an `int`.
 
-### addrinfo
-<netdb.h>
-https://man7.org/linux/man-pages/man3/getaddrinfo.3.html
-- struct getaddrinfo
-- ai_flags
+### `addrinfo`
 
+Defined in `<netdb.h>` - see the [getaddrinfo man page](https://man7.org/linux/man-pages/man3/getaddrinfo.3.html).
 
-<bits/socket.h>
-https://man7.org/linux/man-pages/man0/sys_socket.h.0p.html
-- ai_family  AF_INET  2
+- `struct addrinfo`
+- `ai_flags`
 
+Field sources:
 
-
-<bits/socket_type.h>
-https://man7.org/linux/man-pages/man2/socket.2.html
-- ai_socktype  SOCK_STREAM = 1,
-
-<netinet/in.h>
-https://man7.org/linux/man-pages/man0/netinet_in.h.0p.html
-- ai_protocol   IPPROTO_TCP = 6,
-
+- `ai_family` (e.g. `AF_INET` = 2) - defined in `<bits/socket.h>`, see [sys/socket.h man page](https://man7.org/linux/man-pages/man0/sys_socket.h.0p.html)
+- `ai_socktype` (e.g. `SOCK_STREAM` = 1) - defined in `<bits/socket_type.h>`, see [socket(2) man page](https://man7.org/linux/man-pages/man2/socket.2.html)
+- `ai_protocol` (e.g. `IPPROTO_TCP` = 6) - defined in `<netinet/in.h>`, see [netinet/in.h man page](https://man7.org/linux/man-pages/man0/netinet_in.h.0p.html)
 
 ### System Calls or Bust
 
@@ -64,7 +54,6 @@ https://man7.org/linux/man-pages/man3/getaddrinfo.3.html
 
 It helps set up the structs you need later on.
 It does all kinds of good stuff for you, including DNS and service name lookups, and fills out the structs you need
-
 
 #### `socket()`
 
@@ -88,4 +77,6 @@ getaddrinfo("www.example.com", "http", &hints, &res);
 s = socket(res->ai_family, res->ai_socktype, res->ai_protocol);
 ```
 
-`socket()` simply returns to you a socket descriptor that you can use in later system calls, or `-1` on error. The global varaible `errno` is set to the error's value.
+`socket()` simply returns to you a socket descriptor that you can use in later system calls, or `-1` on error. The global variable `errno` is set to the error's value.
+
+> Work in progress - continue with `bind()`, `listen()`, `accept()`, and `connect()`.

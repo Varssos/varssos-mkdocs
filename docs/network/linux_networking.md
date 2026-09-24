@@ -9,7 +9,7 @@ ifconfig
 
 ## ARP
 
-Address Resolution Protocol. The primary function of this protocol is to resolve the IP address of a system to its MAC address, hence it works between layer 2 (Data link layer) and layer 3 (Network layer). You can check connected devices and DHCP clients.
+Address Resolution Protocol - resolves the IP address of a system to its MAC address. It works between layer 2 (data link layer) and layer 3 (network layer). Use it to check connected devices and DHCP clients.
 
 ```bash
 arp
