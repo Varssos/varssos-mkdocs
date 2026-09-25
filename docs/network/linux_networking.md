@@ -32,3 +32,17 @@ See [nmap](./nmap.md) for more advanced usage.
 | `ping -I {interface} {ip}` | ping through a chosen interface |
 | `netstat -a -n \| grep ESTABLISHED` | check active established sessions |
 | `nmap {ip}` | scan open ports for an ip |
+
+## DNS issues
+
+If DNS resolution fails (e.g. VPN or captive network breaks DNS-over-TLS negotiation with `systemd-resolved`), try disabling DNS-over-TLS on the affected interface:
+
+```bash
+sudo resolvectl dnsovertls eno1 off
+```
+
+Check current DNS status with:
+
+```bash
+resolvectl status
+```
