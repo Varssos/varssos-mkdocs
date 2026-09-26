@@ -98,6 +98,7 @@ site_name: Varssos MkDocs
 #         - expect: linux/shell_tools/modern/expect.md
 #         - fzf: linux/shell_tools/modern/fzf.md
 #         - notify-send: linux/shell_tools/modern/notify-send.md
+#         - rg: linux/shell_tools/modern/rg.md
 #         - tmux: linux/shell_tools/modern/tmux.md
 #       - Random shell exercises: linux/shell_tools/random_shell_exercises.md
 #     - Storage:
