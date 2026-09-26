@@ -1,5 +1,7 @@
 # md5sum
 
+`md5sum` computes an MD5 checksum, useful for quickly comparing whether two files are identical.
+
 ```bash
 md5sum ./dmesg.txt
 # Output: 

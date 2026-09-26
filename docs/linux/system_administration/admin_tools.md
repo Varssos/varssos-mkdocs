@@ -2,9 +2,15 @@
 
 
 ## Change port for ssh
-```
+
+Edit the SSH daemon config and add the new port under `Port`:
+```bash
 sudo nano /etc/ssh/sshd_config
-listing port: sudo semanage port -l
+```
+
+On SELinux-enforcing systems, list the ports already allowed for the `ssh_port_t` type, then allow the new one:
+```bash
+sudo semanage port -l
 sudo semanage port -a -t ssh_port_t -p tcp 2022
 ```
 
@@ -19,7 +25,7 @@ ps aux | grep -v $USER | tail -1
 
 Search the whole system in the background for file names matching a pattern (`*user*`), redirect errors to null, results to a file, and lower the priority of the command to the lowest:
 ```bash
-nice -n20 find / -name "*user*"  2>/dev/null >/tmp/wyniki&
+nice -n20 find / -name "*user*"  2>/dev/null >/tmp/results &
 ```
 
 ## Manage users on linux
@@ -28,30 +34,6 @@ nice -n20 find / -name "*user*"  2>/dev/null >/tmp/wyniki&
 
 [How to change hostname on linux](https://www.hostinger.com/tutorials/linux-change-hostname)
 
-
-## SWAP
-
-
-Increase swap
-
-```
-sudo dd if=/dev/zero of=/var/swap.fs bs=1M count=1024
-ls -al /var/swap.fs
-sudo chmod 600 /var/swap.fs
-sudo swapon /var/swap.fs
-sudo nano /etc/fstab
-echo "/var/swap.fs none swap defaults 0 0" >> /etc/fstab
-```
-
-
-On file
-```
-sudo dd if=/dev/zero of=/var/nowa.fs bs=1M count=1024
-sudo mkfs.ext4 /var/nowa.fs
-sudo mkdir /mnt/partzpliku
-sudo mount /var/nowa.fs /mnt/partzpliku/
-tail -1 /etc/mtab
-```
 
 ## DNF (RPM-based distros)
 

@@ -11,7 +11,7 @@ top
 
 Detailed manual can be found:
 ```bash
-man help
+man ps
 ```
 
 All processes:

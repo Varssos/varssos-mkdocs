@@ -5,29 +5,20 @@
 
 ## AWK - glossary
 
-!!! note
+| Variable | Meaning | Default |
+|---|---|---|
+| `FS` | field separator | space |
+| `NF` | number of fields (in the current record/line) | — |
+| `NR` | number of the current record (line) | — |
+| `FNR` | number of the current record (line) in the current file | — |
+| `OFMT` | output format for numbers | `%.6g` |
+| `OFS` | output field separator | space |
+| `ORS` | output record separator | newline |
+| `RLENGTH` | length of the string matched by the `match` function | — |
+| `RS` | record separator | newline |
+| `RSTART` | index of the string matched by the `match` function | — |
+| `SUBSEP` | subscript separator | `\034` |
 
-    FS - field separator. Default: space
-
-    NF - number of fields ( in the current record/line)
-
-    NR - number of the current records (lines)
-
-    FNR - number of the current records (lines) in the current file
-
-    OFMT - output format for numbers. Default: %.6g
-
-    OFS - output field separator. Default: space
-
-    ORS - output record separator. Default: newline
-
-    RLENGTH - length of the string matched by the match function
-
-    RS - record separator. Default: newline
-
-    RSTART - index of the string matched by the match function
-
-    SUBSEP - subscript separator. Default: \034
 
     $0 - whole line
 

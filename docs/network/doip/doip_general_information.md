@@ -10,6 +10,8 @@ DoIP is defined in ISO 13400
 - network node - device connected to the IP - based network but does not implement the DoIP protocol
 - vehicle sub-network - network not directly connected to the IP-based network
 
+## Symbols and abbreviated terms
+
 ## Scope
 
 Mandatory features:

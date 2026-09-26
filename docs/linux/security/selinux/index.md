@@ -65,3 +65,13 @@ Modes:
 
 SELinux messages are sent to the `auditd` process for logging and analysis.
 
+## Multi-Level Security (MLS)
+
+MLS adds sensitivity levels (`s0`-`s15`) on top of the usual type enforcement, restricting access based on data classification rather than just type. A user/process cleared for a given level can read data at or below that level, but cannot read higher levels and can only modify data at its own level.
+
+Example: a user cleared for level `s3`:
+
+- Can read files with level `s0` to `s3`.
+- Cannot read files with level `s4` or higher.
+- Can only modify files at sensitivity level `s3`.
+

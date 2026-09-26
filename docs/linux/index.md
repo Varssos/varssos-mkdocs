@@ -2,31 +2,56 @@
 
 Pretty nice linux course [Linux Journey](https://linuxjourney.com/)
 
-- [Admin tools](admin_tools.md)
-- [Certificates-practical commands](certificates.md)
-- [Cron](cron.md)
-- [CURL](curl.md)
-- [Downgrade apps](downgrade_apps.md)
-- [GRUB](grub.md)
-- [GUI on Linux](gui_on_linux.md)
-- [Hexdump](hexdump.md)
-- [HID](hid.md)
-- [Install deb packages from file](install_deb_from_file.md)
-- [Linux improvements](linux_improvements/index.md)
-- [Nvidia](nvidia.md)
+## Concepts
+
+- [Concepts overview](concepts/index.md)
+- [POSIX](concepts/posix.md)
+
+## System administration
+
+- [System administration overview](system_administration/index.md)
+- [Admin tools](system_administration/admin_tools.md)
+- [Cron](system_administration/cron.md)
+- [GRUB](system_administration/grub.md)
+- [Systemd service](system_administration/systemd_service.md)
+- [Users](system_administration/users.md)
+- [PC troubleshooting](system_administration/pc_troubleshooting.md)
+
+## Package management
+
 - [Package management system](package_management_system/index.md)
-- [PC troubleshooting](pc_troubleshooting.md)
-- [POSIX](posix.md)
-- [Printers on Linux](printers/index.md)
+
+## Storage
+
+- [Storage overview](storage/index.md)
+
+## Performance tuning
+
+- [Performance tuning overview](performance_tuning/index.md)
+
+## Hardware and peripherals
+
+- [Hardware overview](hardware/index.md)
+- [Printers on Linux](hardware/printers/index.md)
+
+## Desktop and multimedia
+
+- [Desktop and multimedia overview](desktop_and_multimedia/index.md)
+
+## Security
+
+- [Security overview](security/index.md)
+- [SELinux](security/selinux/index.md)
+- [Certificates-practical commands](security/certificates.md)
+
+## Processes
+
 - [Processes in Linux](processes/index.md)
-- [Pulseaudio](pulseaudio.md)
-- [RAID in Linux](raid_in_linux/index.md)
-- [Random linux shell exercises](random_shell_exercises.md)
+
+## Remote connections
+
 - [Remote connections](remote_connections/index.md)
-- [SELinux](selinux/index.md)
+
+## Shell tools
+
 - [Shell tools](shell_tools/index.md)
-- [Systemd service](systemd_service.md)
-- [Tmux](tmux.md)
-- [Usb linux](usb_linux.md)
-- [Usb network speed](usb_network_speed.md)
-- [Users](users.md)

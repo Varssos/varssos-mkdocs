@@ -1,5 +1,7 @@
 # sha256sum
 
+`sha256sum` computes a SHA-256 checksum — stronger than `md5sum`, commonly used to verify downloaded file integrity.
+
 ```bash
 sha256sum ./dmesg.txt
 # Output:

@@ -1,4 +1,4 @@
-# Usb linux
+# USB on Linux
 
 ## How to restart any tty serial in linux cli
 
@@ -16,7 +16,7 @@ udevadm info --query=path --name=/dev/ttyUSB1 | awk -F'/' '{print $(NF-4)}'
 
 You can add an alias:
 ```bash
-alias getphysicalttyusbaddress='getphysicalttyUSBaddress_fun() { udevadm info --query=path --name=/dev/ttyUSB"$1" | awk -F/ "{print \$(NF-4)}"; }; getphysicalttyUSBaddress_fun'
+alias getphysicalttyusbaddress='getphysicalttyusbaddress_fun() { udevadm info --query=path --name=/dev/ttyUSB"$1" | awk -F/ "{print \$(NF-4)}"; }; getphysicalttyusbaddress_fun'
 ```
 
 Usage:
@@ -40,7 +40,10 @@ alias disconnectusb='echo "1-7.2.3" | sudo tee /sys/bus/usb/drivers/usb/unbind'
 alias connectusb='echo "1-7.2.3" | sudo tee /sys/bus/usb/drivers/usb/bind'
 ```
 
-## [[deprecated]] Disconnect usb device on linux
+## Disconnect usb device on linux (manual, without a known physical address)
+
+!!! note
+    This is the older, more manual way to find and disconnect a device — prefer the alias-based approach above if you already know the physical address.
 
 1. List connected usb devices
 ```bash

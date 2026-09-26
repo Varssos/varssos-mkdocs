@@ -40,29 +40,69 @@ site_name: Varssos MkDocs
 #       - DoIP general information: network/doip/doip_general_information.md
 #   - Linux: 
 #     - linux/index.md
-#     - Admin tools: linux/admin_tools.md
-#     - Certificates: linux/certificates.md
-#     - Linux improvements:
-#       - linux/linux_improvements/index.md
-#       - swap: linux/linux_improvements/swap.md
-#     - Nvidia: linux/nvidia.md
+#     - Concepts:
+#       - linux/concepts/index.md
+#       - POSIX: linux/concepts/posix.md
+#     - System administration:
+#       - linux/system_administration/index.md
+#       - Admin tools: linux/system_administration/admin_tools.md
+#       - Cron: linux/system_administration/cron.md
+#       - GRUB: linux/system_administration/grub.md
+#       - PC troubleshooting: linux/system_administration/pc_troubleshooting.md
+#       - Systemd service: linux/system_administration/systemd_service.md
+#       - Users: linux/system_administration/users.md
+#     - Package management system:
+#       - linux/package_management_system/index.md
+#       - apt: linux/package_management_system/apt.md
+#       - Debian package management system: linux/package_management_system/debian_package_management_system.md
+#       - Downgrade apps: linux/package_management_system/downgrade_apps.md
+#       - Install deb packages from file: linux/package_management_system/install_deb_from_file.md
+#     - Hardware:
+#       - linux/hardware/index.md
+#       - HID: linux/hardware/hid.md
+#       - Nvidia: linux/hardware/nvidia.md
+#       - Printers:
+#         - linux/hardware/printers/index.md
+#         - Brother: linux/hardware/printers/brother.md
+#       - Usb hub: linux/hardware/usb_hub.md
+#       - Usb linux: linux/hardware/usb_linux.md
+#       - Usb network speed: linux/hardware/usb_network_speed.md
+#     - Desktop and multimedia:
+#       - linux/desktop_and_multimedia/index.md
+#       - GUI on Linux: linux/desktop_and_multimedia/gui_on_linux.md
+#       - Pulseaudio: linux/desktop_and_multimedia/pulseaudio.md
+#     - Security:
+#       - linux/security/index.md
+#       - Certificates: linux/security/certificates.md
+#       - SELinux: linux/security/selinux/index.md
+#     - Performance tuning:
+#       - linux/performance_tuning/index.md
+#       - swap: linux/performance_tuning/swap.md
 #     - Shell tools:
 #       - linux/shell_tools/index.md
-#       - awk: linux/shell_tools/awk.md
-#       - expect: linux/shell_tools/expect.md
-#       - find: linux/shell_tools/find.md
-#       - fzf: linux/shell_tools/fzf.md
-#       - grep: linux/shell_tools/grep.md
-#       - md5sum: linux/shell_tools/md5sum.md
-#       - mv: linux/shell_tools/mv.md
-#       - nice: linux/shell_tools/nice.md
-#       - sed: linux/shell_tools/sed.md
-#       - sha256sum: linux/shell_tools/sha256sum.md
-#       - tar: linux/shell_tools/tar.md
-#     - RAID in Linux:
-#       - linux/raid_in_linux/index.md
-#       - mdadm: linux/raid_in_linux/mdadm.md
-#     - Random shell exercises: linux/random_shell_exercises.md
+#       - Common:
+#         - linux/shell_tools/common/index.md
+#         - awk: linux/shell_tools/common/awk.md
+#         - curl: linux/shell_tools/common/curl.md
+#         - find: linux/shell_tools/common/find.md
+#         - grep: linux/shell_tools/common/grep.md
+#         - hexdump: linux/shell_tools/common/hexdump.md
+#         - md5sum: linux/shell_tools/common/md5sum.md
+#         - mv: linux/shell_tools/common/mv.md
+#         - nice: linux/shell_tools/common/nice.md
+#         - sed: linux/shell_tools/common/sed.md
+#         - sha256sum: linux/shell_tools/common/sha256sum.md
+#         - tar: linux/shell_tools/common/tar.md
+#       - Modern:
+#         - linux/shell_tools/modern/index.md
+#         - expect: linux/shell_tools/modern/expect.md
+#         - fzf: linux/shell_tools/modern/fzf.md
+#         - notify-send: linux/shell_tools/modern/notify-send.md
+#         - tmux: linux/shell_tools/modern/tmux.md
+#       - Random shell exercises: linux/shell_tools/random_shell_exercises.md
+#     - Storage:
+#       - linux/storage/index.md
+#       - mdadm: linux/storage/mdadm.md
       
 #   - Version control:
 #     - version_control/index.md
