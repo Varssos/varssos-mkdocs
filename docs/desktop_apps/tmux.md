@@ -1,5 +1,4 @@
 # tmux 
 
-## Installation and setup
+## [Installation and setup](https://github.com/Varssos/ansible-role-tmux#manual-setup-without-ansible)
 
-https://github.com/Varssos/ansible-role-tmux#manual-setup-without-ansible
