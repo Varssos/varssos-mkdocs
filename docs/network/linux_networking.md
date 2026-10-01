@@ -46,3 +46,10 @@ Check current DNS status with:
 ```bash
 resolvectl status
 ```
+
+## Switch network profiles on network interface
+
+```
+nmcli connection up "abc" ifname enp53s0
+nmcli connection up "xyz" ifname enp53s0
+```
