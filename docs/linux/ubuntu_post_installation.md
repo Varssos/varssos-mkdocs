@@ -11,19 +11,47 @@ If dialout is missing, run sudo usermod -aG dialout "$USER"
 Reboot is needed to see any changes
 
 
-TODO:
-- add weeknumber to calendar
-"Date & Time" -> Week Day "V"
+## TODO:
 
-Manual verify:
-- vs code extension
+- [x] Add weeknumber to calendar
+`Date & Time` -> Week Day `V`
 
-- kitty
 
-- tmux
+## Manual verify:
+
+- [x] bashrc:
+```
+bashreload
+```
+
+- [ ] copyq
+?
+
+- [x] dotfiles
+```
+ls -la ~/dotfiles
+```
+
+- [x] fzf
+`ctrl+t`
+
+- [x] kitty
+```
+ls -la ~/.config/kitty/
+```
+
+- [x] tmux
+
 Turn on tmux and check if my custom theme is visible
 
-...
+- [x] vs code extension
+```
+code --list-extensions
+```
+
+
+
+
 
 
 
