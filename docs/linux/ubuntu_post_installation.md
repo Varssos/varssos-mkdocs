@@ -24,8 +24,10 @@ Reboot is needed to see any changes
 bashreload
 ```
 
-- [ ] copyq
-?
+- [x] copyq
+
+Open `copyq`
+`ctrl+shift+v`
 
 - [x] dotfiles
 ```
