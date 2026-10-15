@@ -2,17 +2,17 @@
 
 ## How to install nvidia drivers on debian based distros
 
-Right now `nvidia-driver-580` is the most stable from drivers below:
+Right now `nvidia-driver-595` is the most stable from drivers below:
 ```
 nouveau
-nvidia-driver-580
-nvidia-driver-580-open
+nvidia-driver-595
+nvidia-driver-595-open
 ```
 
-
+In 2026 recommended way of install
 ```
 sudo apt update
-sudo apt install nvidia-driver-580
+nvidia-driver-595-open
 sudo reboot
 ```
 

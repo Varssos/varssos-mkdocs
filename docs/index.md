@@ -1,28 +1,11 @@
-# Welcome to MkDocs
+# Welcome to Varssos MkDocs
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
-## Commands
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## Content
+There are notes and tips about C/C++, Bash, Python, networking, Linux, OpenWrt, Git, Raspberry Pi, and ESP. Everything here is for my personal use.
 
-## Project layout
+These notes help me keep track of what I learn and what I set up in the past. Here I store everything related to technology. It's my personal wiki.
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
-
-
-# Abc
-
-
-- [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit
-- [ ] Vestibulum convallis sit amet nisi a tincidunt
-    * [x] In hac habitasse platea dictumst
-    * [x] In scelerisque nibh non dolor mollis congue sed et metus
-    * [ ] Praesent sed risus massa
-- [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque
+In 2026, I moved from https://sw-notes.readthedocs.io/
