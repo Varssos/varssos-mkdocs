@@ -15,6 +15,7 @@ Reboot is needed to see any changes
 
 - [x] Add weeknumber to calendar
 `Date & Time` -> Week Day `V`
+- Install nvidia drivers
 
 
 ## Manual verify:

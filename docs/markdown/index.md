@@ -40,3 +40,5 @@ cat /etc/my-service/config.conf
 </details>
 
 </details>
+
+### [Icons](https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/)

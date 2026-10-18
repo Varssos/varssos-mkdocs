@@ -78,6 +78,3 @@ To actually edit files in place, pipe matching file names into `sed`:
 rg fast -l | xargs sed -i 's/fast/FAST/g'
 ```
 
-## Combining with fzf
-
-For an interactive "live grep" with a preview pane, see the [fzf notes](fzf.md#useful-one-liners).
